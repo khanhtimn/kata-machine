@@ -51,7 +51,7 @@ OUT OF DATE. We have quite a few more. need to update
 
 ### How It Works
 
-Make sure you have [Node.js](https://nodejs.org/en/) and yarn installed: `npm install --global yarn`
+Make sure you have [Node.js](https://nodejs.org/en/) and pnpm installed: `npm install --global pnpm`
 
 clone the repo and install the dependencies
 
