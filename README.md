@@ -89,12 +89,10 @@ src/day2
 ...
 ```
 
-`yarn generate` will also update the `tsconfig.json` and `jest.config` to point the latest `day` folder via tspaths. This allows us to avoid updating anything for testing each day.
-
 #### Testing
 
 ```
-pnpm test
+pnpm exec Jest the_test
 ```
 
 I have yet to create a testing strategy for next sets of algorithms, but we will get there when i cross that bridge.
