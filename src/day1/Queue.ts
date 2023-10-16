@@ -31,7 +31,6 @@ export default class Queue<T> {
         } as Node<T>;
 
         tail.next = this.tail;
-        this.tail = tail;
         return;
     }
 
@@ -43,6 +42,11 @@ export default class Queue<T> {
         const head = this.head;
         this.head = this.head.next;
         head.next = undefined;
+
+        if (this.length === 0) {
+            this.head = this.tail = undefined;
+        }
+
         return head.value;
     }
     peek(): T | undefined {
