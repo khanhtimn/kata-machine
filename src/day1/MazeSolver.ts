@@ -22,7 +22,6 @@ function walk(
     ) {
         return false;
     }
-    return false;
 
     //#2: On the wall
     if (maze[curr.y][curr.x] === wall) {
@@ -62,10 +61,10 @@ function walk(
         ) {
             return true;
         }
-
-        //Post
-        path.pop();
     }
+
+    //Post
+    path.pop();
 
     return false;
 }
