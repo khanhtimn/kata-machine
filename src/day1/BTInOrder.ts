@@ -15,6 +15,8 @@ function recurseTree(
     return path;
 }
 
-export default function in_order_search(head: BinaryNode<number>): number[] {
+export default function in_order_search(
+    head: BinaryNode<number> | null,
+): number[] {
     return recurseTree(head, []);
 }
