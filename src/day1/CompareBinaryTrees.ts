@@ -29,9 +29,7 @@ export default function compare(
     }
 
     for (let i = 0; i < pathA.length; i++) {
-        if (pathA[i] === pathB[i]) {
-            continue;
-        } else {
+        if (!(pathA[i] === pathB[i])) {
             break;
         }
     }
