@@ -33,7 +33,6 @@ export default function compare(
             continue;
         } else {
             break;
-            return false;
         }
     }
 
