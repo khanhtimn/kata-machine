@@ -16,6 +16,7 @@ export default class MinHeap {
         this.length = 0;
         this.heap = [];
     }
+
     private goUp(idx: number): void {
         if (idx === 0) {
             return;
@@ -30,38 +31,6 @@ export default class MinHeap {
             this.goUp(this.parent(idx)); //Continue going up
         }
     }
-
-    //Ugly ass shit solution
-    // private goDown(idx: number): void {
-    //     if (idx >= this.length || this.leftChild(idx) >= this.length) {
-    //         return;
-    //     }
-    //     //Min of (left child vs right child vs current)
-    //     //If right child is the smallest
-    //     if (
-    //         this.heap[this.leftChild(idx)] > this.heap[this.rightChild(idx)] &&
-    //         this.heap[idx] > this.heap[this.rightChild(idx)]
-    //     ) {
-    //         //Swap currV with rV
-    //         const temp = this.heap[this.rightChild(idx)];
-    //         this.heap[this.rightChild(idx)] = this.heap[idx];
-    //         this.heap[idx] = temp;
-    //         //Continue going down
-    //         this.goDown(this.rightChild(idx));
-    //     }
-    //     //If left child is the smallest
-    //     else if (
-    //         this.heap[this.rightChild(idx)] > this.heap[this.leftChild(idx)] &&
-    //         this.heap[idx] > this.heap[this.leftChild(idx)]
-    //     ) {
-    //         //Swap currV with lV
-    //         const temp = this.heap[this.leftChild(idx)];
-    //         this.heap[this.leftChild(idx)] = this.heap[idx];
-    //         this.heap[idx] = temp;
-    //         //Continue going down
-    //         this.goDown(this.leftChild(idx));
-    //     }
-    // }
 
     private goDown(idx: number): void {
         const leftIdx = this.leftChild(idx);
@@ -95,6 +64,7 @@ export default class MinHeap {
         this.goUp(this.length);
         this.length++;
     }
+
     delete(): number {
         if (this.length === 0) {
             return -1;
