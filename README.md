@@ -51,12 +51,11 @@ OUT OF DATE. We have quite a few more. need to update
 
 ### How It Works
 
-Make sure you have [Node.js](https://nodejs.org/en/) and pnpm installed: `npm install --global pnpm`
-
+Make sure you have [Node.js](https://nodejs.org/en/) and bun installed
 clone the repo and install the dependencies
 
 ```bash
-pnpm install
+bun install
 ```
 
 edit the `ligma.config.js` file
@@ -78,7 +77,7 @@ module.exports = {
 create a day of katas, this will use the list in the `ligma.config.js`.
 
 ```bash
-pnpm generate
+bun generate
 ```
 
 this will progressively create folders named
@@ -92,7 +91,7 @@ src/day2
 #### Testing
 
 ```
-pnpm exec Jest the_test
+bun test the_test
 ```
 
 I have yet to create a testing strategy for next sets of algorithms, but we will get there when i cross that bridge.
