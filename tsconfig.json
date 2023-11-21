@@ -10,6 +10,7 @@
         "target": "esnext",
         "module": "commonjs",
         "baseUrl": "src",
+        "types": ["bun-types"],
         "paths": {
             "@code/*": [
                 "day1/*"
