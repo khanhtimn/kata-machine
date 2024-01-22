@@ -51,41 +51,10 @@ OUT OF DATE. We have quite a few more. need to update
 
 ### How It Works
 
-Make sure you have [Node.js](https://nodejs.org/en/) and bun installed
-clone the repo and install the dependencies
+Make sure you have [Node.js](https://nodejs.org/en/) and bun installed clone the repo and install the dependencies
 
 ```bash
 bun install
-```
-
-edit the `ligma.config.js` file
-
-```javascript
-module.exports = {
-    dsa: [
-        "InsertionSort",
-        "MergeSort",
-        "Queue",
-        "Stack",
-        "QuickSort",
-        "DijkstraList",
-        "PrimsList",
-    ],
-};
-```
-
-create a day of katas, this will use the list in the `ligma.config.js`.
-
-```bash
-bun generate
-```
-
-this will progressively create folders named
-
-```
-src/day1
-src/day2
-...
 ```
 
 #### Testing
